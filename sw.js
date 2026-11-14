@@ -1,9 +1,10 @@
-const CACHE = "drachenwuerfel-v2";
+const CACHE = "drachenwuerfel-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./icon-192.png",
+  "./icon-256.png",
   "./icon-512.png"
 ];
 
