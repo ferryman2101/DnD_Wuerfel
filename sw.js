@@ -1,6 +1,7 @@
-const CACHE = "drachenwuerfel-v1";
+const CACHE = "drachenwuerfel-v2";
 const APP_SHELL = [
-  "./DnD_Wuerfel.html",
+  "./",
+  "./index.html",
   "./manifest.webmanifest",
   "./icon-192.png",
   "./icon-512.png"
@@ -28,7 +29,7 @@ self.addEventListener("fetch", event => {
         const copy = response.clone();
         caches.open(CACHE).then(cache => cache.put(event.request, copy));
         return response;
-      }).catch(() => caches.match("./DnD_Wuerfel.html"))
+      }).catch(() => caches.match("./index.html"))
     )
   );
 });
